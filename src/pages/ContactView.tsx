@@ -19,7 +19,8 @@ const ContactView: FunctionComponent = () => {
       <Text>You can send us an email at </Text>
       <Button className="Contact-email" type="link" onClick={onEmailClick}>
         {email}
-      </Button><Text>.</Text>
+      </Button>
+      <Text>.</Text>
     </div>
   );
 };
