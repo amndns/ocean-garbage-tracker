@@ -1,6 +1,18 @@
 import React, { FunctionComponent } from 'react';
-import { CircleMarker, Map, Popup, TileLayer } from 'react-leaflet';
+import { LatLngExpression } from 'leaflet';
+import { Map, Polygon, Popup, TileLayer } from 'react-leaflet';
+import GarbageDetail from '../components/GarbageDetail';
 import 'leaflet/dist/leaflet.css';
+
+const markersColor = '#1890FF';
+
+const latlngs: LatLngExpression[] = [
+  [37, -109.05],
+  [37, -119.03],
+  [41, -129.03],
+  [41, -102.05],
+  [37, -102.04],
+];
 
 const MapView: FunctionComponent = () => {
   return (
@@ -10,9 +22,11 @@ const MapView: FunctionComponent = () => {
         url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png	"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-      <CircleMarker center={[51.51, -0.12]} color="blue" radius={20}>
-        <Popup>Popup in CircleMarker</Popup>
-      </CircleMarker>
+      <Polygon positions={latlngs} color={markersColor}>
+        <Popup>
+          <GarbageDetail />
+        </Popup>
+      </Polygon>
     </Map>
   );
 };
