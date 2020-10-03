@@ -2,3 +2,44 @@
   width: 100vw;
   height: 100vh;
 }
+
+.App {
+  display: flex;
+
+  &-nav {
+    padding: 32px 0;
+    width: 20%;
+
+    &-icon {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    &-title {
+      margin-bottom: 8px;
+      padding: 0 16px;
+    }
+
+    &-footer {
+      bottom: 16px;
+      padding: 0 16px;
+      position: absolute;
+      width: 20%;
+
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &-divider {
+    height: 100vh;
+    margin: 0;
+  }
+
+  &-content {
+    height: 100vh;
+    overflow-y: scroll;
+    width: 80%;
+  }
+}
