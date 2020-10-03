@@ -1,13 +1,13 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import {
-  DeleteOutlined,
   GlobalOutlined,
   MailOutlined,
   QuestionCircleOutlined,
 } from '@ant-design/icons';
-import { Divider, Menu, Typography } from 'antd';
-import { Switch, Route, Link, useLocation } from 'react-router-dom';
+import { Divider } from 'antd';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
+import Navigation from './components/Navigation';
 import ContactView from './pages/ContactView';
 import FaqView from './pages/FaqView';
 import MapView from './pages/MapView';
@@ -31,7 +31,6 @@ const menuItems = [
 ];
 
 const App: FunctionComponent = () => {
-  const { Text, Title } = Typography;
   const location = useLocation();
 
   const [page, setPage] = useState('home');
@@ -42,35 +41,16 @@ const App: FunctionComponent = () => {
 
     if (selected) {
       setPage(selected.key);
-    } else window.location.assign('/');
+    } else {
+      setPage('home');
+      window.location.assign('/');
+    }
   }, [location]);
 
   return (
     <div className="App">
       <div className="App-nav">
-        <div className="App-nav-title">
-          <DeleteOutlined className="App-nav-icon" />
-          <Title level={2}>
-            <Link to="/">Messages in Bottles</Link>
-          </Title>
-          <Text>
-            Messages in Bottles is an online platform containing interactive
-            visualizations and information on the Great Pacific Garbage Patch
-          </Text>
-        </div>
-        <Menu selectedKeys={[page]} mode="vertical">
-          {menuItems.map((item) => (
-            <Menu.Item key={item.key} icon={item.icon}>
-              <Link to={item.link}>{item.title}</Link>
-            </Menu.Item>
-          ))}
-        </Menu>
-        <div className="App-nav-footer">
-          <Text className="App-nav-footer-text" type="secondary">
-            This is a Space Apps Challenge 2020 Project made by Team Manila Bay
-            Sands
-          </Text>
-        </div>
+        <Navigation pageKey={page} menuItems={menuItems} />
       </div>
       <Divider className="App-divider" type="vertical" />
 
