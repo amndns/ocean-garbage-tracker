@@ -16,28 +16,6 @@
   &-nav {
     padding: 32px 0;
     width: 20%;
-
-    &-icon {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    &-title {
-      margin-bottom: 8px;
-      padding: 0 16px;
-    }
-
-    &-footer {
-      bottom: 16px;
-      padding: 0 16px;
-      position: absolute;
-      width: 20%;
-
-      &-text {
-        color: rgba(0, 0, 0, 0.45);
-        font-size: 11px;
-      }
-    }
   }
 
   &-divider {
