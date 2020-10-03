@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import {
   DeleteOutlined,
   GlobalOutlined,
@@ -6,7 +6,7 @@ import {
   QuestionCircleOutlined,
 } from '@ant-design/icons';
 import { Divider, Menu, Typography } from 'antd';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, useLocation } from 'react-router-dom';
 
 import ContactView from './pages/ContactView';
 import FaqView from './pages/FaqView';
@@ -14,14 +14,36 @@ import MapView from './pages/MapView';
 import 'antd/dist/antd.css';
 import './App.scss';
 
+const menuItems = [
+  { key: 'home', link: '/', icon: <GlobalOutlined />, title: 'Map' },
+  {
+    key: 'faq',
+    link: '/faq',
+    icon: <QuestionCircleOutlined />,
+    title: 'FAQ',
+  },
+  {
+    key: 'contact',
+    link: '/contact',
+    icon: <MailOutlined />,
+    title: 'Contact Us',
+  },
+];
+
 const App: FunctionComponent = () => {
   const { Text, Title } = Typography;
+  const location = useLocation();
 
   const [page, setPage] = useState('home');
 
-  const handleClick = ({ key }: any) => {
-    setPage(key);
-  };
+  useEffect(() => {
+    const link = location.pathname;
+    const selected = menuItems.find((item) => item.link === link);
+
+    if (selected) {
+      setPage(selected.key);
+    } else setPage('home');
+  }, [location]);
 
   return (
     <div className="App">
@@ -37,16 +59,12 @@ const App: FunctionComponent = () => {
             porta gravida felis.
           </Text>
         </div>
-        <Menu selectedKeys={[page]} onClick={handleClick} mode="vertical">
-          <Menu.Item key="home" icon={<GlobalOutlined />}>
-            <Link to="/"> Map</Link>
-          </Menu.Item>
-          <Menu.Item key="faq" icon={<QuestionCircleOutlined />}>
-            <Link to="/faq"> FAQ</Link>
-          </Menu.Item>
-          <Menu.Item key="contact" icon={<MailOutlined />}>
-            <Link to="/contact">Contact Us</Link>
-          </Menu.Item>
+        <Menu selectedKeys={[page]} mode="vertical">
+          {menuItems.map((item) => (
+            <Menu.Item key={item.key} icon={item.icon}>
+              <Link to={item.link}>{item.title}</Link>
+            </Menu.Item>
+          ))}
         </Menu>
         <div className="App-nav-footer">
           <Text className="App-nav-footer-text" type="secondary">
