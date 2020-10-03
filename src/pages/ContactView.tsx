@@ -11,7 +11,7 @@ const ContactView: FunctionComponent = () => {
       <Title level={2}>Contact Us</Title>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -21,10 +21,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -34,10 +34,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -47,10 +47,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -60,10 +60,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -73,10 +73,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -86,10 +86,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -99,10 +99,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -112,10 +112,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -125,10 +125,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -138,10 +138,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -151,10 +151,10 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
 
       <Title level={4}>Question</Title>
-      <text>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
         nisi felis, hendrerit sit amet volutpat at, tempus id enim. Aenean
         elementum nisi sed urna mattis lacinia. In euismod metus non arcu
@@ -164,7 +164,7 @@ const ContactView: FunctionComponent = () => {
         vitae est pharetra commodo et sed purus. Donec aliquam neque ultricies
         sapien malesuada ornare. Integer a auctor neque. Praesent at feugiat
         nulla.
-      </text>
+      </Text>
     </div>
   );
 };
