@@ -42,7 +42,7 @@ const App: FunctionComponent = () => {
 
     if (selected) {
       setPage(selected.key);
-    } else setPage('home');
+    } else window.location.assign('/');
   }, [location]);
 
   return (
@@ -51,12 +51,11 @@ const App: FunctionComponent = () => {
         <div className="App-nav-title">
           <DeleteOutlined className="App-nav-icon" />
           <Title level={2}>
-            <Link to="/">Ocean Garbage Tracker</Link>
+            <Link to="/">Messages in Bottles</Link>
           </Title>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            elementum nec justo in mattis. Duis enim leo, euismod non nulla eu,
-            porta gravida felis.
+            Messages in Bottles is an online platform containing interactive
+            visualizations and information on the Great Pacific Garbage Patch
           </Text>
         </div>
         <Menu selectedKeys={[page]} mode="vertical">
