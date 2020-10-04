@@ -19,11 +19,7 @@ const MapView: FunctionComponent = () => {
         longitudeExtractor={(point: any) => point.lng}
         latitudeExtractor={(point: any) => point.lat}
         intensityExtractor={(point: any) => point.count}
-      >
-        <Popup>
-          <GarbageDetail />
-        </Popup>
-      </HeatMapLayer>
+      />
       <TileLayer
         url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png	"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
