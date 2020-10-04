@@ -1,7 +1,16 @@
 .Contact {
   padding: 32px;
 
-  &-email {
-    padding: 0 !important;
+  &-details {
+    padding-left: 16px;
+
+    &-bullet {
+      font-size: 8px;
+      margin-right: 12px;
+    }
+
+    &-email {
+      padding: 0 !important;
+    }
   }
 }
