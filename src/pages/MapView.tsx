@@ -4,13 +4,14 @@ import { LatLngTuple } from 'leaflet';
 import { CircleMarker, Map, Popup, TileLayer } from 'react-leaflet';
 import HeatMapLayer from 'react-leaflet-heatmap-layer';
 import GarbageDetail from '../components/GarbageDetail';
+import heatmapData from '../data/heatmap_data.json';
+import scatterData from '../data/scatter_data.json';
 import 'leaflet/dist/leaflet.css';
-import data from './sample_heatmap';
 import './MapView.scss';
 
 const markersColor = '#1890FF';
 
-const markers: LatLngTuple[] = data.map((d) => [d.lat, d.lng]);
+const markers: LatLngTuple[] = scatterData.map((d) => [d.lat, d.lng]);
 
 const MapView: FunctionComponent = () => {
   const { Text } = Typography;
@@ -31,11 +32,11 @@ const MapView: FunctionComponent = () => {
         <Text className="MapView-filter-text">Circle Markers</Text>
         <Switch defaultChecked onChange={onShowCircleMarkers} />
       </Card>
-      <Map center={{ lat: 0, lng: 0 }} zoom={2}>
+      <Map center={{ lat: 0, lng: 0 }} zoom={3}>
         {' '}
         {showHeatMap && (
           <HeatMapLayer
-            points={data as any}
+            points={heatmapData as any}
             longitudeExtractor={(point: any) => point.lng}
             latitudeExtractor={(point: any) => point.lat}
             intensityExtractor={(point: any) => point.count}
@@ -47,7 +48,7 @@ const MapView: FunctionComponent = () => {
         />
         {showCircleMarkers &&
           markers.map((m) => (
-            <CircleMarker center={m} radius={5} color={markersColor}>
+            <CircleMarker key={`${m[0]}:${m[1]}`} center={m} radius={5} color={markersColor}>
               <Popup>
                 <GarbageDetail latitude={m[0]} longitude={m[1]} />
               </Popup>
