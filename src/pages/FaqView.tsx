@@ -15,7 +15,7 @@ const FaqView: FunctionComponent = () => {
       <Text>
         Messages in Bottles (WIP) is an online platform containing interactive
         visualizations and information on coastal plastic waste using remote
-        sensing data from Sentinel-2. Inspired by the work of Dr. Biermen, Dr.
+        sensing data from Sentinel-2. Inspired by the work of Dr. Biermann, Dr.
         Clewley, Dr. Martinez-Vicente, and Dr. Topouzelis entitled “Finding
         Plastic Patches in Coastal Waters using Optical Satellite Data”, this
         project bridges the gap between their research and the general public in
