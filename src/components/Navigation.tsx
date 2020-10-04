@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { DeleteOutlined, HeartTwoTone } from '@ant-design/icons';
+import { HeartTwoTone } from '@ant-design/icons';
 import { Menu, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 import 'leaflet/dist/leaflet.css';
@@ -28,13 +28,14 @@ const Navigation: FunctionComponent<INavigationProps> = (props: {
   return (
     <div>
       <div className="Navigation-title">
-        <DeleteOutlined className="Navigation-icon" />
+        <img className="Navigation-title-logo" src="../logo.png" alt="logo" />
         <Title level={2}>
           <Link to="/">Messages in Bottles</Link>
         </Title>
         <Text>
           Messages in Bottles is an online platform containing interactive
-          visualizations and information on the Great Pacific Garbage Patch
+          visualizations and information on coastal plastic waste using remote
+          sensing data from Sentinel-2.
         </Text>
       </div>
       <Menu selectedKeys={[pageKey]} mode="vertical">

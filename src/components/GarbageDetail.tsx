@@ -1,19 +1,22 @@
 import React, { FunctionComponent } from 'react';
 import { Typography } from 'antd';
 import 'leaflet/dist/leaflet.css';
+import * as formatcoords from 'formatcoords';
 
-const GarbageDetail: FunctionComponent = () => {
-  const { Text, Title } = Typography;
+interface IGarbageDetailProps {
+  latitude: number;
+  longitude: number;
+}
 
-  return (
-    <div>
-      <Title level={5}>Garbage</Title>
-      <Text>
-        Cool cool Cool cool Cool cool Cool cool Cool cool cool Cool cool Cool
-        cool cool Cool cool Cool cool
-      </Text>
-    </div>
-  );
+const GarbageDetail: FunctionComponent<IGarbageDetailProps> = (props: {
+  latitude: number;
+  longitude: number;
+}) => {
+  const { Text } = Typography;
+
+  const { latitude, longitude } = props;
+
+  return <Text>{formatcoords(latitude, longitude).format()}</Text>;
 };
 
 export default GarbageDetail;

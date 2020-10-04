@@ -1,0 +1,16 @@
+.MapView {
+  &-card {
+    margin: 16px 64px !important;
+    position: absolute !important;
+    z-index: 1000;
+  }
+
+  &-filter {
+    display: inline;
+    margin-right: 12px;
+
+    &-text {
+      margin-right: 8px;
+    }
+  }
+}
