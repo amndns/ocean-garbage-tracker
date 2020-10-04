@@ -4,6 +4,7 @@ import { Menu, Typography } from 'antd';
 import { Link } from 'react-router-dom';
 import 'leaflet/dist/leaflet.css';
 import './Navigation.scss';
+import logo from '../static/logo.png';
 
 export interface MenuItem {
   key: string;
@@ -28,7 +29,7 @@ const Navigation: FunctionComponent<INavigationProps> = (props: {
   return (
     <div>
       <div className="Navigation-title">
-        <img className="Navigation-title-logo" src="../logo.png" alt="logo" />
+        <img className="Navigation-title-logo" src={logo} alt="logo" />
         <Title level={2}>
           <Link to="/">Messages in Bottles</Link>
         </Title>

@@ -2,11 +2,12 @@
   padding: 32px;
 
   &-details {
-    padding-left: 16px;
-
-    &-bullet {
-      font-size: 8px;
-      margin-right: 12px;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    
+    &-picture {
+      margin: 8px 16px !important;
     }
 
     &-email {
