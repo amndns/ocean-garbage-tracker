@@ -13,7 +13,7 @@ const FaqView: FunctionComponent = () => {
 
       <Title level={4}>What is Messages in Bottles?</Title>
       <Text>
-        Messages in Bottles (WIP) is an online platform containing interactive
+        Messages in Bottles (MiBs) is an online platform containing interactive
         visualizations and information on coastal plastic waste using remote
         sensing data from Sentinel-2. Inspired by the work of Dr. Biermann, Dr.
         Clewley, Dr. Martinez-Vicente, and Dr. Topouzelis entitled “Finding

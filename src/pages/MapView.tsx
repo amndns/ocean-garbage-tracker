@@ -48,7 +48,12 @@ const MapView: FunctionComponent = () => {
         />
         {showCircleMarkers &&
           markers.map((m) => (
-            <CircleMarker key={`${m[0]}:${m[1]}`} center={m} radius={5} color={markersColor}>
+            <CircleMarker
+              key={`${m[0]}:${m[1]}`}
+              center={m}
+              radius={5}
+              color={markersColor}
+            >
               <Popup>
                 <GarbageDetail latitude={m[0]} longitude={m[1]} />
               </Popup>
