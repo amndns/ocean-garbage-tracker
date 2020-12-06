@@ -54,7 +54,7 @@ The remote sensing data was collected from Sentinel-2 through the Copernicus Ope
    - The post process text file output was translated to JSON and used along with the coordinates that were processed with Pandas for use in the webapp.
 7. Feed the JSON data points into the webapp and let it display the suspected plastic patches in an interactive manner.
 
-**Related Repo:** https://github.com/camoredo/spaceapps
+**Related Repo:** https://github.com/amndns/ocean-garbage-scripts
 
 ## ⚒️ Project Development
 
